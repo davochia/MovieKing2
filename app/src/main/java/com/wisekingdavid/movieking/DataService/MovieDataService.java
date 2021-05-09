@@ -22,6 +22,9 @@ public class MovieDataService {
 
     public static final String IMAGE_URI = "https://image.tmdb.org/t/p/w500"; // Image uri
 
+    private static int movieID;
+    public static final String CAST = "https://api.themoviedb.org/3/movie/" + movieID + "/credits?api_key=c1c68db8f902d5b4cd68ba02816b02ef&language=en-US";
+
     public static final String LATEST_MOVIES ="https://api.themoviedb.org/3/movie/latest?api_key=c1c68db8f902d5b4cd68ba02816b02ef&language=en-US";
     public static final String POPULAR_MOVIES ="https://api.themoviedb.org/3/movie/popular?api_key=c1c68db8f902d5b4cd68ba02816b02ef&language=en-US&page=1";
     public static final String NOW_PLAYING = "https://api.themoviedb.org/3/movie/now_playing?api_key=c1c68db8f902d5b4cd68ba02816b02ef&language=en-US&page=1";

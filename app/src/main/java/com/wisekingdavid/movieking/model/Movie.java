@@ -1,28 +1,55 @@
 package com.wisekingdavid.movieking.model;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+import androidx.room.TypeConverter;
+import androidx.room.TypeConverters;
+
+import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class Movie {
-
+    @PrimaryKey
     private int id;
+
+    @ColumnInfo(name = "imdb_id")
     private String imdb_id;
+
+    @ColumnInfo(name = "backdrop_path")
     private String backdrop_path;
-    private List<Genres> genres;
+
+    @TypeConverters(DataConverter.class)
+    @ColumnInfo(name = "cast")
+    private List<Cast> cast;
+
+    @ColumnInfo(name = "original_title")
     private String original_title;
+
+    @ColumnInfo(name = "overview")
     private String overview;
+
+    @ColumnInfo(name = "poster_path")
     private String poster_path;
+
+    @ColumnInfo(name = "release_date")
     private String release_date;
+
+    @ColumnInfo(name = "title")
     private String title;
+
+    @ColumnInfo(name = "vote_average")
     private double vote_average;
 
     public Movie() {
     }
 
-    public Movie(int id, String imdb_id, String backdrop_path, List<Genres> genres, String original_title, String overview, String poster_path, String release_date, String title, double vote_average) {
+    public Movie(int id, String imdb_id, String backdrop_path, List<Cast> cast, String original_title, String overview, String poster_path, String release_date, String title, double vote_average) {
         this.id = id;
         this.imdb_id = imdb_id;
         this.backdrop_path = backdrop_path;
-        this.genres = genres;
+        this.cast = cast;
         this.original_title = original_title;
         this.overview = overview;
         this.poster_path = poster_path;
@@ -55,12 +82,14 @@ public class Movie {
         this.backdrop_path = backdrop_path;
     }
 
-    public List<Genres> getGenres() {
-        return genres;
+
+
+    public List<Cast> getCast() {
+        return cast;
     }
 
-    public void setGenres(List<Genres> genres) {
-        this.genres = genres;
+    public void setCast(List<Cast> cast) {
+        this.cast = cast;
     }
 
     public String getOriginal_title() {
@@ -111,13 +140,16 @@ public class Movie {
         this.vote_average = vote_average;
     }
 
+
+
+
     @Override
     public String toString() {
         return "Movie{" +
                 "id=" + id +
                 ", imdb_id='" + imdb_id + '\'' +
                 ", backdrop_path='" + backdrop_path + '\'' +
-                ", genres=" + genres +
+                ", cast=" + cast +
                 ", original_title='" + original_title + '\'' +
                 ", overview='" + overview + '\'' +
                 ", poster_path='" + poster_path + '\'' +

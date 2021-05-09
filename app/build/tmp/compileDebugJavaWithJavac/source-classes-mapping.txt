@@ -1,8 +1,41 @@
-com/wisekingdavid/movieking/adapter/DataViewAdapter.java
- com.wisekingdavid.movieking.adapter.DataViewAdapter
+com/wisekingdavid/movieking/NowPlayingActivity.java
+ com.wisekingdavid.movieking.NowPlayingActivity
+ com.wisekingdavid.movieking.NowPlayingActivity$1
+com/wisekingdavid/movieking/model/DataConverter.java
+ com.wisekingdavid.movieking.model.DataConverter
+ com.wisekingdavid.movieking.model.DataConverter$1
+ com.wisekingdavid.movieking.model.DataConverter$2
 com/wisekingdavid/movieking/VolleySingleton.java
  com.wisekingdavid.movieking.VolleySingleton
  com.wisekingdavid.movieking.VolleySingleton$1
+com/wisekingdavid/movieking/SearchActivity.java
+ com.wisekingdavid.movieking.SearchActivity
+ com.wisekingdavid.movieking.SearchActivity$1
+ com.wisekingdavid.movieking.SearchActivity$2
+com/wisekingdavid/movieking/adapter/RecycleViewMovieAdapter.java
+ com.wisekingdavid.movieking.adapter.RecycleViewMovieAdapter
+ com.wisekingdavid.movieking.adapter.RecycleViewMovieAdapter$1
+ com.wisekingdavid.movieking.adapter.RecycleViewMovieAdapter$MyViewHolder
+com/wisekingdavid/movieking/BuildConfig.java
+ com.wisekingdavid.movieking.BuildConfig
+com/wisekingdavid/movieking/DAO/MovieDAO.java
+ com.wisekingdavid.movieking.DAO.MovieDAO
+com/wisekingdavid/movieking/model/Cast.java
+ com.wisekingdavid.movieking.model.Cast
+com/wisekingdavid/movieking/model/AbstractActivity.java
+ com.wisekingdavid.movieking.model.AbstractActivity
+com/wisekingdavid/movieking/LoginActivity.java
+ com.wisekingdavid.movieking.LoginActivity
+ com.wisekingdavid.movieking.LoginActivity$1
+ com.wisekingdavid.movieking.LoginActivity$2
+com/wisekingdavid/movieking/model/Movie.java
+ com.wisekingdavid.movieking.model.Movie
+com/wisekingdavid/movieking/PopularMoviesActivity.java
+ com.wisekingdavid.movieking.PopularMoviesActivity
+ com.wisekingdavid.movieking.PopularMoviesActivity$1
+ com.wisekingdavid.movieking.PopularMoviesActivity$2
+com/wisekingdavid/movieking/adapter/DataViewAdapter.java
+ com.wisekingdavid.movieking.adapter.DataViewAdapter
 com/wisekingdavid/movieking/DataService/MovieDataService.java
  com.wisekingdavid.movieking.DataService.MovieDataService
  com.wisekingdavid.movieking.DataService.MovieDataService$1
@@ -12,32 +45,7 @@ com/wisekingdavid/movieking/DataService/MovieDataService.java
  com.wisekingdavid.movieking.DataService.MovieDataService$5
  com.wisekingdavid.movieking.DataService.MovieDataService$6
  com.wisekingdavid.movieking.DataService.MovieDataService$VolleyResponseListener
-com/wisekingdavid/movieking/adapter/RecycleViewMovieAdapter.java
- com.wisekingdavid.movieking.adapter.RecycleViewMovieAdapter
- com.wisekingdavid.movieking.adapter.RecycleViewMovieAdapter$1
- com.wisekingdavid.movieking.adapter.RecycleViewMovieAdapter$MyViewHolder
-com/wisekingdavid/movieking/model/Genres.java
- com.wisekingdavid.movieking.model.Genres
-com/wisekingdavid/movieking/BuildConfig.java
- com.wisekingdavid.movieking.BuildConfig
-com/wisekingdavid/movieking/model/AbstractActivity.java
- com.wisekingdavid.movieking.model.AbstractActivity
-com/wisekingdavid/movieking/LoginActivity.java
- com.wisekingdavid.movieking.LoginActivity
- com.wisekingdavid.movieking.LoginActivity$1
- com.wisekingdavid.movieking.LoginActivity$2
-com/wisekingdavid/movieking/model/Movie.java
- com.wisekingdavid.movieking.model.Movie
-com/wisekingdavid/movieking/NowPlayingActivity.java
- com.wisekingdavid.movieking.NowPlayingActivity
- com.wisekingdavid.movieking.NowPlayingActivity$1
-com/wisekingdavid/movieking/SearchActivity.java
- com.wisekingdavid.movieking.SearchActivity
- com.wisekingdavid.movieking.SearchActivity$1
- com.wisekingdavid.movieking.SearchActivity$2
-com/wisekingdavid/movieking/PopularMoviesActivity.java
- com.wisekingdavid.movieking.PopularMoviesActivity
- com.wisekingdavid.movieking.PopularMoviesActivity$1
- com.wisekingdavid.movieking.PopularMoviesActivity$2
+com/wisekingdavid/movieking/DB/MovieDatabase.java
+ com.wisekingdavid.movieking.DB.MovieDatabase
 com/wisekingdavid/movieking/MovieActivity.java
  com.wisekingdavid.movieking.MovieActivity

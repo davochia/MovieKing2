@@ -39,7 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Release date"
-        app:layout_constraintEnd_toStartOf="@id/detailsRating"
+        app:layout_constraintEnd_toStartOf="@+id/detailsRating"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detailsTitle" />
@@ -51,23 +52,24 @@
         android:layout_marginStart="8dp"
         android:text="Rating"
         app:layout_constraintBottom_toBottomOf="@+id/detailsRelease"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/detailsRelease"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/detailsRelease"
         app:layout_constraintTop_toTopOf="@+id/detailsRelease" />
+
 
     <TextView
         android:id="@+id/detailsDescription"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:padding="8dp"
-        android:textAlignment="center"
         android:text="Description"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/detailsRelease" />
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -81,6 +83,26 @@
         app:layout_constraintTop_toBottomOf="@+id/detailsDescription"
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottom_navigation_menu" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsDescription" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        app:layout_constraintBottom_toBottomOf="@+id/detailsRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/detailsRating"
+        app:layout_constraintTop_toTopOf="@+id/detailsRating" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
