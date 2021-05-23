@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieKing">
-        <activity android:name=".SearchActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".FavoriteMoviesActivity"></activity>
+        <activity
+            android:name=".SearchActivity"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".PopularMoviesActivity" />
         <activity android:name=".MovieActivity" />
         <activity android:name=".NowPlayingActivity" />

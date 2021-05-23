@@ -21,6 +21,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MovieKing" >
+        <activity android:name="com.wisekingdavid.movieking.FavoriteMoviesActivity" />
         <activity
             android:name="com.wisekingdavid.movieking.SearchActivity"
             android:windowSoftInputMode="adjustPan" />

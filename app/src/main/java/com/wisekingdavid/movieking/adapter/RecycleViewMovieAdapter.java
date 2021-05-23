@@ -62,6 +62,8 @@ public class RecycleViewMovieAdapter extends RecyclerView.Adapter<RecycleViewMov
                 intent.putExtra("Image", mData.get(position).getBackdrop_path());
                 intent.putExtra("Released", mData.get(position).getRelease_date());
                 intent.putExtra("Rating", mData.get(position).getVote_average());
+                intent.putExtra("Favorite", mData.get(position).isFavourite());
+
 
                 mContext.startActivity(intent);
 

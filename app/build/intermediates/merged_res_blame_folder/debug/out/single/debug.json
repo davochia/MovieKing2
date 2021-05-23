@@ -228,6 +228,10 @@
         "source": "/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/res/drawable/action.jpeg"
     },
     {
+        "merged": "/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/build/intermediates/res/merged/debug/layout_activity_favorite_movies.xml.flat",
+        "source": "/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/res/layout/activity_favorite_movies.xml"
+    },
+    {
         "merged": "/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/build/intermediates/res/merged/debug/drawable_rocky.jpeg.flat",
         "source": "/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/res/drawable/rocky.jpeg"
     }

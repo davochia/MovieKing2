@@ -42,10 +42,13 @@ public class Movie {
     @ColumnInfo(name = "vote_average")
     private double vote_average;
 
+    @ColumnInfo(name = "favourite")
+    private boolean favourite;
+
     public Movie() {
     }
 
-    public Movie(int id, String imdb_id, String backdrop_path, List<Cast> cast, String original_title, String overview, String poster_path, String release_date, String title, double vote_average) {
+    public Movie(int id, String imdb_id, String backdrop_path, List<Cast> cast, String original_title, String overview, String poster_path, String release_date, String title, double vote_average, boolean favourite) {
         this.id = id;
         this.imdb_id = imdb_id;
         this.backdrop_path = backdrop_path;
@@ -56,6 +59,7 @@ public class Movie {
         this.release_date = release_date;
         this.title = title;
         this.vote_average = vote_average;
+        this.favourite = favourite;
     }
 
     public int getId() {
@@ -81,8 +85,6 @@ public class Movie {
     public void setBackdrop_path(String backdrop_path) {
         this.backdrop_path = backdrop_path;
     }
-
-
 
     public List<Cast> getCast() {
         return cast;
@@ -140,8 +142,13 @@ public class Movie {
         this.vote_average = vote_average;
     }
 
+    public boolean isFavourite() {
+        return favourite;
+    }
 
-
+    public void setFavourite(boolean favourite) {
+        this.favourite = favourite;
+    }
 
     @Override
     public String toString() {
@@ -156,6 +163,7 @@ public class Movie {
                 ", release_date='" + release_date + '\'' +
                 ", title='" + title + '\'' +
                 ", vote_average=" + vote_average +
+                ", favourite=" + favourite +
                 '}';
     }
 }

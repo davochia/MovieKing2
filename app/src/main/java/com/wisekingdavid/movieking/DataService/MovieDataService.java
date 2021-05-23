@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
+
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -142,7 +143,7 @@ public class MovieDataService {
             url = SEARCH_MOVIES + "all";
         }
         else if(movieName.contains(" ")){
-            String newMovieName = movieName.replace(" ", "+");
+            String newMovieName = movieName.replace(" ", "%20");
             url = SEARCH_MOVIES + newMovieName;
         }else {
             url = POPULAR_MOVIES;

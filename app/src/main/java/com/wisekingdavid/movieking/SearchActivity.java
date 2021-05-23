@@ -46,6 +46,12 @@ public class SearchActivity extends AbstractActivity implements SearchView.OnQue
                         overridePendingTransition(0,0);
                         return true;
 
+
+                    case R.id.favoriteMoviesButton:
+                        startActivity(new Intent(getApplicationContext(), FavoriteMoviesActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
                     case R.id.popularButton:
                         startActivity(new Intent(getApplicationContext(), PopularMoviesActivity.class));
                         overridePendingTransition(0,0);

@@ -34,7 +34,7 @@ public final class MovieDAO_Impl implements MovieDAO {
     this.__insertionAdapterOfMovie = new EntityInsertionAdapter<Movie>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `Movie` (`id`,`imdb_id`,`backdrop_path`,`cast`,`original_title`,`overview`,`poster_path`,`release_date`,`title`,`vote_average`) VALUES (?,?,?,?,?,?,?,?,?,?)";
+        return "INSERT OR ABORT INTO `Movie` (`id`,`imdb_id`,`backdrop_path`,`cast`,`original_title`,`overview`,`poster_path`,`release_date`,`title`,`vote_average`,`favourite`) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -83,6 +83,9 @@ public final class MovieDAO_Impl implements MovieDAO {
           stmt.bindString(9, value.getTitle());
         }
         stmt.bindDouble(10, value.getVote_average());
+        final int _tmp_1;
+        _tmp_1 = value.isFavourite() ? 1 : 0;
+        stmt.bindLong(11, _tmp_1);
       }
     };
     this.__deletionAdapterOfMovie = new EntityDeletionOrUpdateAdapter<Movie>(__db) {
@@ -139,6 +142,7 @@ public final class MovieDAO_Impl implements MovieDAO {
       final int _cursorIndexOfReleaseDate = CursorUtil.getColumnIndexOrThrow(_cursor, "release_date");
       final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
       final int _cursorIndexOfVoteAverage = CursorUtil.getColumnIndexOrThrow(_cursor, "vote_average");
+      final int _cursorIndexOfFavourite = CursorUtil.getColumnIndexOrThrow(_cursor, "favourite");
       final List<Movie> _result = new ArrayList<Movie>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final Movie _item;
@@ -207,6 +211,11 @@ public final class MovieDAO_Impl implements MovieDAO {
         final double _tmpVote_average;
         _tmpVote_average = _cursor.getDouble(_cursorIndexOfVoteAverage);
         _item.setVote_average(_tmpVote_average);
+        final boolean _tmpFavourite;
+        final int _tmp_1;
+        _tmp_1 = _cursor.getInt(_cursorIndexOfFavourite);
+        _tmpFavourite = _tmp_1 != 0;
+        _item.setFavourite(_tmpFavourite);
         _result.add(_item);
       }
       return _result;

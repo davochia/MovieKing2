@@ -30,13 +30,18 @@ public class NowPlayingActivity extends AbstractActivity {
 
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.nowPlayingButton);
+        //bottomNavigationView.setSelectedItemId(R.id.nowPlayingButton);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()){
                 case R.id.nowPlayingButton:
-//                        startActivity(new Intent(getApplicationContext(), NowPlayingActivity.class));
-//                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), NowPlayingActivity.class));
+                        overridePendingTransition(0,0);
+                    return true;
+
+                case R.id.favoriteMoviesButton:
+                    startActivity(new Intent(getApplicationContext(), FavoriteMoviesActivity.class));
+                    overridePendingTransition(0,0);
                     return true;
 
                 case R.id.popularButton:

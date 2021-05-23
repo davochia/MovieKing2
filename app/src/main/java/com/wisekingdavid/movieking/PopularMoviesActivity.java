@@ -49,6 +49,12 @@ public class PopularMoviesActivity extends AbstractActivity {
 //                        overridePendingTransition(0,0);
                         return true;
 
+
+                    case R.id.favoriteMoviesButton:
+                        startActivity(new Intent(getApplicationContext(), FavoriteMoviesActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
                     case R.id.searchButton:
                         startActivity(new Intent(getApplicationContext(), SearchActivity.class));
                         overridePendingTransition(0,0);

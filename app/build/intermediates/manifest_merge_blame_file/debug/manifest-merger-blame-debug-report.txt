@@ -18,7 +18,7 @@
 12-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:6:22-76
 13
 14    <application
-14-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:8:5-26:19
+14-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:8:5-29:19
 15        android:allowBackup="true"
 15-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -35,53 +35,56 @@
 22        android:testOnly="true"
 23        android:theme="@style/Theme.MovieKing" >
 23-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:14:9-47
-24        <activity
-24-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:15:9-91
-25            android:name="com.wisekingdavid.movieking.SearchActivity"
-25-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:15:19-49
-26            android:windowSoftInputMode="adjustPan" />
-26-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:15:50-89
-27        <activity android:name="com.wisekingdavid.movieking.PopularMoviesActivity" />
-27-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:16:9-59
-27-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:16:19-56
-28        <activity android:name="com.wisekingdavid.movieking.MovieActivity" />
-28-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:17:9-51
-28-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:17:19-48
-29        <activity android:name="com.wisekingdavid.movieking.NowPlayingActivity" />
-29-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:18:9-56
-29-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:18:19-53
-30        <activity android:name="com.wisekingdavid.movieking.LoginActivity" >
-30-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:19:9-25:20
-30-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:19:19-48
-31            <intent-filter>
-31-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:20:13-24:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:21:17-69
-32-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:21:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:23:17-77
-34-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:23:27-74
-35            </intent-filter>
-36        </activity>
-37
-38        <provider
-38-->[com.squareup.picasso:picasso:2.71828] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/342c89d43aa4e94946cb6227f7c1c135/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
-39            android:name="com.squareup.picasso.PicassoProvider"
-39-->[com.squareup.picasso:picasso:2.71828] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/342c89d43aa4e94946cb6227f7c1c135/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
-40            android:authorities="com.wisekingdavid.movieking.com.squareup.picasso"
-40-->[com.squareup.picasso:picasso:2.71828] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/342c89d43aa4e94946cb6227f7c1c135/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
-41            android:exported="false" />
-41-->[com.squareup.picasso:picasso:2.71828] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/342c89d43aa4e94946cb6227f7c1c135/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
-42
-43        <service
-43-->[androidx.room:room-runtime:2.3.0] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/ac4c5df517bee845c3bf24fbc039826a/room-runtime-2.3.0/AndroidManifest.xml:25:9-28:40
-44            android:name="androidx.room.MultiInstanceInvalidationService"
-44-->[androidx.room:room-runtime:2.3.0] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/ac4c5df517bee845c3bf24fbc039826a/room-runtime-2.3.0/AndroidManifest.xml:26:13-74
-45            android:directBootAware="true"
-45-->[androidx.room:room-runtime:2.3.0] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/ac4c5df517bee845c3bf24fbc039826a/room-runtime-2.3.0/AndroidManifest.xml:27:13-43
-46            android:exported="false" />
-46-->[androidx.room:room-runtime:2.3.0] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/ac4c5df517bee845c3bf24fbc039826a/room-runtime-2.3.0/AndroidManifest.xml:28:13-37
-47    </application>
-48
-49</manifest>
+24        <activity android:name="com.wisekingdavid.movieking.FavoriteMoviesActivity" />
+24-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:15:9-69
+24-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:15:19-57
+25        <activity
+25-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:16:9-18:55
+26            android:name="com.wisekingdavid.movieking.SearchActivity"
+26-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:17:13-43
+27            android:windowSoftInputMode="adjustPan" />
+27-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:18:13-52
+28        <activity android:name="com.wisekingdavid.movieking.PopularMoviesActivity" />
+28-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:19:9-59
+28-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:19:19-56
+29        <activity android:name="com.wisekingdavid.movieking.MovieActivity" />
+29-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:20:9-51
+29-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:20:19-48
+30        <activity android:name="com.wisekingdavid.movieking.NowPlayingActivity" />
+30-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:21:9-56
+30-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:21:19-53
+31        <activity android:name="com.wisekingdavid.movieking.LoginActivity" >
+31-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:22:9-28:20
+31-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:22:19-48
+32            <intent-filter>
+32-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:23:13-27:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:24:17-69
+33-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:24:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:26:17-77
+35-->/Users/kingdavid/Desktop/assign1/movie-king/MovieKing2/app/src/main/AndroidManifest.xml:26:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <provider
+39-->[com.squareup.picasso:picasso:2.71828] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/342c89d43aa4e94946cb6227f7c1c135/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+40            android:name="com.squareup.picasso.PicassoProvider"
+40-->[com.squareup.picasso:picasso:2.71828] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/342c89d43aa4e94946cb6227f7c1c135/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+41            android:authorities="com.wisekingdavid.movieking.com.squareup.picasso"
+41-->[com.squareup.picasso:picasso:2.71828] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/342c89d43aa4e94946cb6227f7c1c135/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+42            android:exported="false" />
+42-->[com.squareup.picasso:picasso:2.71828] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/342c89d43aa4e94946cb6227f7c1c135/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+43
+44        <service
+44-->[androidx.room:room-runtime:2.3.0] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/ac4c5df517bee845c3bf24fbc039826a/room-runtime-2.3.0/AndroidManifest.xml:25:9-28:40
+45            android:name="androidx.room.MultiInstanceInvalidationService"
+45-->[androidx.room:room-runtime:2.3.0] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/ac4c5df517bee845c3bf24fbc039826a/room-runtime-2.3.0/AndroidManifest.xml:26:13-74
+46            android:directBootAware="true"
+46-->[androidx.room:room-runtime:2.3.0] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/ac4c5df517bee845c3bf24fbc039826a/room-runtime-2.3.0/AndroidManifest.xml:27:13-43
+47            android:exported="false" />
+47-->[androidx.room:room-runtime:2.3.0] /Users/kingdavid/.gradle/caches/transforms-2/files-2.1/ac4c5df517bee845c3bf24fbc039826a/room-runtime-2.3.0/AndroidManifest.xml:28:13-37
+48    </application>
+49
+50</manifest>

@@ -12,6 +12,9 @@ com/wisekingdavid/movieking/SearchActivity.java
  com.wisekingdavid.movieking.SearchActivity
  com.wisekingdavid.movieking.SearchActivity$1
  com.wisekingdavid.movieking.SearchActivity$2
+com/wisekingdavid/movieking/FavoriteMoviesActivity.java
+ com.wisekingdavid.movieking.FavoriteMoviesActivity
+ com.wisekingdavid.movieking.FavoriteMoviesActivity$1
 com/wisekingdavid/movieking/adapter/RecycleViewMovieAdapter.java
  com.wisekingdavid.movieking.adapter.RecycleViewMovieAdapter
  com.wisekingdavid.movieking.adapter.RecycleViewMovieAdapter$1

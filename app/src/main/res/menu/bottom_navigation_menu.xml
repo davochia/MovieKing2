@@ -5,6 +5,14 @@
         android:enabled="true"
         android:icon="@drawable/movie_logo"
         android:title="Popular Movies"/>
+
+
+        <item
+            android:id="@+id/favoriteMoviesButton"
+            android:enabled="true"
+            android:icon="@drawable/movie_logo"
+            android:title="Favourite Movies"/>
+
     <item
         android:id="@+id/nowPlayingButton"
         android:enabled="true"
